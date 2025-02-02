@@ -1,0 +1,30 @@
+/*package whatever //do not write package name here */
+
+import java.util.*;
+
+class GFG {
+	public static void main (String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    
+	    long n = sc.nextLong();
+	    long q = sc.nextLong();
+	    long[] arr = new long[n];
+	    for (int i = 0; i < n; i++) {
+	        arr[i] = sc.nextLong();
+	    }
+	    
+	    long[] segTree = new long[4 * n + 1];
+	    Arrays.fill(segTree, Integer.MAX_VALUE);
+	    
+	    
+	    BuildMyTree(segTree, 1, 0, n - 1);
+	    
+	    for (int i = 0; i < q; i++) {
+	        long start = sc.nextLong();
+	        long end = sc.nextLong();
+	        
+	        long res = search(start, end, segTree, n);
+	        System.out.println(res);
+	    }
+	}
+}
