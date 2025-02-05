@@ -32,6 +32,8 @@ public class LoopedPlaylist {
         res += minSongs;
         minInd++;
         System.out.println(minInd + " " + res);
+
+        sc.close();
     }    
 
     private static long getNumberOfSongs(long[] arr, int start, long total) {

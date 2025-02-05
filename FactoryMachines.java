@@ -36,6 +36,8 @@ public class FactoryMachines {
     
  
     System.out.println(Math.min(res, maxi * t));
+
+    sc.close();
   }
   
   private static boolean working(long[] arr, long n, long mid, long t) {

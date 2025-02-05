@@ -32,5 +32,7 @@ public class HarderProblem{
         System.out.println();
         
     }
+    sc.close();
+
   }
 }

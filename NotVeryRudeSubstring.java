@@ -35,6 +35,6 @@ public class NotVeryRudeSubstring {
             j++;
         }
         System.out.println(res);
- 
+        sc.close();
     }
 }

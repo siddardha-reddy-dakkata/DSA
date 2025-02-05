@@ -23,7 +23,7 @@ public class XeniaandColorfulGems {
 
 
 
-            long res = 0;
+            // long res = 0;
             
 
 
@@ -74,6 +74,6 @@ public class XeniaandColorfulGems {
 
             // System.out.println(res);
         }
-
+        sc.close();
     }
 }

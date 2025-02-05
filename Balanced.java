@@ -25,6 +25,9 @@ public class Balanced {
             System.out.println(res);
         }
 
+    sc.close();
+
+
     }
     private static boolean predicate(long[] arr, long mid) {
         if (arr.length == 1) return arr[0] >= mid;

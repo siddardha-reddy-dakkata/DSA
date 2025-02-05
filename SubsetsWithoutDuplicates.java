@@ -12,6 +12,8 @@ public class SubsetsWithoutDuplicates {
 
         // Collections.sort(res);
         for (ArrayList<Integer> i: res) System.out.println(i);
+        sc.close();
+
     }
     private static void findSubsets(int ind, int[] nums, ArrayList<Integer> ds, ArrayList<ArrayList<Integer>> res) {
         res.add(new ArrayList<>(ds));
